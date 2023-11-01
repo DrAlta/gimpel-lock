@@ -1,0 +1,5 @@
+#include "stdafx.h"
+#include "../GeometryTool.h"
+#include "../G3DCoreFiles/Frame.h"
+#include "../G3DCoreFiles/Layers.h"
+#include "Primitives.h"

@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FullVersion|Win32">
+      <Configuration>FullVersion</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SharewareDEBUG|Win32">
+      <Configuration>SharewareDEBUG</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shareware|Win32">
+      <Configuration>Shareware</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E96E2468-7B96-49B9-8216-7745C81950FD}</ProjectGuid>
+    <RootNamespace>Gimpel3D</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SharewareDEBUG|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shareware|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FullVersion|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SharewareDEBUG|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shareware|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FullVersion|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FullVersion|Win32'">
+    <OutDir>.\Gimpel3D___Win32_FullVersion\</OutDir>
+    <IntDir>.\Gimpel3D___Win32_FullVersion\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shareware|Win32'">
+    <OutDir>.\Gimpel3D___Win32_Shareware\</OutDir>
+    <IntDir>.\Gimpel3D___Win32_Shareware\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SharewareDEBUG|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FullVersion|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Gimpel3D___Win32_FullVersion/Gimpel3D.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Gimpel3D___Win32_FullVersion/Gimpel3D.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Gimpel3D___Win32_FullVersion/</AssemblerListingLocation>
+      <ObjectFileName>.\Gimpel3D___Win32_FullVersion/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Gimpel3D___Win32_FullVersion/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Gimpel3D___Win32_FullVersion/Gimpel3D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Gimpel3D___Win32_FullVersion/Gimpel3D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Gimpel3D___Win32_FullVersion/Gimpel3D.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/Gimpel3D.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/Gimpel3D.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Release/Gimpel3D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/Gimpel3D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/Gimpel3D.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shareware|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Gimpel3D___Win32_Shareware/Gimpel3D.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>SHAREWARE_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Gimpel3D___Win32_Shareware/Gimpel3D.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Gimpel3D___Win32_Shareware/</AssemblerListingLocation>
+      <ObjectFileName>.\Gimpel3D___Win32_Shareware/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Gimpel3D___Win32_Shareware/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Gimpel3D___Win32_Shareware/Gimpel3D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Gimpel3D___Win32_Shareware/Gimpel3D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Gimpel3D___Win32_Shareware/Gimpel3D.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Gimpel3D.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/Gimpel3D.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug/Gimpel3D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Gimpel3D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/Gimpel3D.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SharewareDEBUG|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Gimpel3D.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SKIP_EXE_CHECK;SHAREWARE_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/Gimpel3D.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug/Gimpel3D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Gimpel3D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/Gimpel3D.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2DViewOptions.cpp" />
+    <ClCompile Include="3DFrameDlg.cpp" />
+    <ClCompile Include="3DViewOptions.cpp" />
+    <ClCompile Include="AlignmentOptionsDlg.cpp" />
+    <ClCompile Include="AnchorPoints.cpp" />
+    <ClCompile Include="AnchorPointsDlg.cpp" />
+    <ClCompile Include="AutoSegmentDlg.cpp" />
+    <ClCompile Include="BackgroundMesh.cpp" />
+    <ClCompile Include="CircularMaps.cpp" />
+    <ClCompile Include="ColorDlg.cpp" />
+    <ClCompile Include="ContourExtrusionDlg.cpp" />
+    <ClCompile Include="DepthSliderDlg.cpp" />
+    <ClCompile Include="DialogSkinFrame.cpp" />
+    <ClCompile Include="DisparityMap.cpp" />
+    <ClCompile Include="ExportOptionsDlg.cpp" />
+    <ClCompile Include="FeaturePoints.cpp" />
+    <ClCompile Include="FeaturePointsDlg.cpp" />
+    <ClCompile Include="FrameCounterDlg.cpp" />
+    <ClCompile Include="FramesDlg.cpp" />
+    <ClCompile Include="GapFillDlg.cpp" />
+    <ClCompile Include="GeometryToolDlg.cpp" />
+    <ClCompile Include="GetSystemInfo.cpp" />
+    <ClCompile Include="GetTextDlg.cpp" />
+    <ClCompile Include="HaloTool.cpp" />
+    <ClCompile Include="HaloToolDlg.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="HelpDlg.cpp" />
+    <ClCompile Include="HtmlViewerDlg.cpp" />
+    <ClCompile Include="ImportListDlg.cpp" />
+    <ClCompile Include="ImportOptionsDlg.cpp" />
+    <ClCompile Include="InfoBarDlg.cpp" />
+    <ClCompile Include="KBMouseControls.cpp" />
+    <ClCompile Include="LayersDlg.cpp" />
+    <ClCompile Include="LinkPointsDlg.cpp" />
+    <ClCompile Include="LinkPointsTool.cpp" />
+    <ClCompile Include="ListSelectDlg.cpp" />
+    <ClCompile Include="PaintTool.cpp" />
+    <ClCompile Include="PaintToolDlg.cpp" />
+    <ClCompile Include="PerspectiveDlg.cpp" />
+    <ClCompile Include="PerspectiveTool.cpp" />
+    <ClCompile Include="PlanarProjectionDlg.cpp" />
+    <ClCompile Include="PreviewData.cpp" />
+    <ClCompile Include="PreviewDlg.cpp" />
+    <ClCompile Include="ProjectionSettingsDlg.cpp" />
+    <ClCompile Include="ReliefMapDlg.cpp" />
+    <ClCompile Include="RenderingOptionsDlg.cpp" />
+    <ClCompile Include="G3DFrontEndInterface.cpp" />
+    <ClCompile Include="G3DMainFrame.cpp" />
+    <ClCompile Include="Gimpel3D.cpp" />
+    <ClCompile Include="Gimpel3DDlg.cpp" />
+    <ClCompile Include="ScaleSliderDlg.cpp" />
+    <ClCompile Include="Shapes.cpp" />
+    <ClCompile Include="ShapesDlg.cpp" />
+    <ClCompile Include="ShiftEdgesDlg.cpp" />
+    <ClCompile Include="Skin.cpp" />
+    <ClCompile Include="SkinFrame.cpp" />
+    <ClCompile Include="SkinMessageBox.cpp" />
+    <ClCompile Include="SkinSlider.cpp" />
+    <ClCompile Include="SkinToolBar.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='FullVersion|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharewareDEBUG|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Shareware|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StereoSettingsDlg.cpp" />
+    <ClCompile Include="TimeLineSliderDlg.cpp" />
+    <ClCompile Include="ToolBarDlg.cpp" />
+    <ClCompile Include="ToolsReferenceDlg.cpp" />
+    <ClCompile Include="ToolTrayDlg.cpp" />
+    <ClCompile Include="TouchUpsDlg.cpp" />
+    <ClCompile Include="TouchUpTool.cpp" />
+    <ClCompile Include="TrackOutlineDlg.cpp" />
+    <ClCompile Include="VirtualCamera.cpp" />
+    <ClCompile Include="VirtualCameraDlg.cpp" />
+    <ClCompile Include="VirtualSet.cpp" />
+    <ClCompile Include="VirtualSetDlg.cpp" />
+    <ClCompile Include="webbrowser2.cpp" />
+    <ClCompile Include="G3DCoreFiles\AntiAlias.cpp" />
+    <ClCompile Include="G3DCoreFiles\AutoAlignment.cpp" />
+    <ClCompile Include="G3DCoreFiles\AutoSegment.cpp" />
+    <ClCompile Include="G3DCoreFiles\AVIExport.cpp" />
+    <ClCompile Include="G3DCoreFiles\BasicEditOps.cpp" />
+    <ClCompile Include="G3DCoreFiles\BrushOps.cpp" />
+    <ClCompile Include="G3DCoreFiles\Camera.cpp" />
+    <ClCompile Include="G3DCoreFiles\Clock.cpp" />
+    <ClCompile Include="G3DCoreFiles\Console.cpp" />
+    <ClCompile Include="G3DCoreFiles\ControlMesh.cpp" />
+    <ClCompile Include="G3DCoreFiles\Controls.cpp" />
+    <ClCompile Include="G3DCoreFiles\EdgeDetection.cpp" />
+    <ClCompile Include="G3DCoreFiles\EdgeFade.cpp" />
+    <ClCompile Include="G3DCoreFiles\EditOps.cpp" />
+    <ClCompile Include="G3DCoreFiles\ExtractVideoFrames.cpp" />
+    <ClCompile Include="G3DCoreFiles\FastMath.cpp" />
+    <ClCompile Include="G3DCoreFiles\Frame.cpp" />
+    <ClCompile Include="G3DCoreFiles\GLEditWnd.cpp" />
+    <ClCompile Include="G3DCoreFiles\GLText.cpp" />
+    <ClCompile Include="G3DCoreFiles\GLWnd.cpp" />
+    <ClCompile Include="G3DCoreFiles\Grid.cpp" />
+    <ClCompile Include="G3DCoreFiles\Image.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTInterface.cpp" />
+    <ClCompile Include="G3DCoreFiles\LayerMask.cpp" />
+    <ClCompile Include="G3DCoreFiles\LayerPopupMenu.cpp" />
+    <ClCompile Include="G3DCoreFiles\Layers.cpp" />
+    <ClCompile Include="G3DCoreFiles\MotionTracker.cpp" />
+    <ClCompile Include="G3DCoreFiles\PBuffer.cpp" />
+    <ClCompile Include="G3DCoreFiles\PixelCreepHistory.cpp" />
+    <ClCompile Include="G3DCoreFiles\PlanarProjection.cpp" />
+    <ClCompile Include="G3DCoreFiles\ProjectFile.cpp" />
+    <ClCompile Include="G3DCoreFiles\Puffit.cpp" />
+    <ClCompile Include="G3DCoreFiles\Relief.cpp" />
+    <ClCompile Include="G3DCoreFiles\ResampleStrips.cpp" />
+    <ClCompile Include="G3DCoreFiles\RLECircleGrid.cpp" />
+    <ClCompile Include="G3DCoreFiles\SideBarFill.cpp" />
+    <ClCompile Include="G3DCoreFiles\StereoView.cpp" />
+    <ClCompile Include="G3DCoreFiles\TempExterns.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\convolve.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\error.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example1.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example2.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example3.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example4.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example5.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\klt.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\klt_util.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\main.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\pnmio.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\pyramid.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\selectGoodFeatures.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\storeFeatures.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\trackFeatures.cpp" />
+    <ClCompile Include="G3DCoreFiles\KLTFiles\writeFeatures.cpp" />
+    <ClCompile Include="MFCMenuToolTipsFiles\MenuTipper.cpp" />
+    <ClCompile Include="MFCMenuToolTipsFiles\PupText.cpp" />
+    <ClCompile Include="MFCMenuToolTipsFiles\Subclass.cpp" />
+    <ClCompile Include="GapFillTool\GapFillTool.cpp" />
+    <ClCompile Include="GapFillTool\GapFillToolControls.cpp" />
+    <ClCompile Include="GapFillTool\GapFillWnd.cpp" />
+    <ClCompile Include="GapFillTool\IsolateGaps.cpp" />
+    <ClCompile Include="GeometryTool\GeometryTool.cpp" />
+    <ClCompile Include="GeometryTool\LoadOBJ.cpp" />
+    <ClCompile Include="GeometryTool\Membrane.cpp" />
+    <ClCompile Include="GeometryTool\TriangleMesh.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationTool.cpp" />
+    <ClCompile Include="AnimationToolDlg.cpp" />
+    <ClCompile Include="PluginInterfaces.cpp" />
+    <ClCompile Include="Plugins.cpp" />
+    <ClCompile Include="PluginsDlg.cpp" />
+    <ClCompile Include="SharedData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gimpel3D.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DViewOptions.h" />
+    <ClInclude Include="3DFrameDlg.h" />
+    <ClInclude Include="3DViewOptions.h" />
+    <ClInclude Include="AlignmentOptionsDlg.h" />
+    <ClInclude Include="AnchorPoints.h" />
+    <ClInclude Include="AnchorPointsDlg.h" />
+    <ClInclude Include="AutoSegmentDlg.h" />
+    <ClInclude Include="CircularMaps.h" />
+    <ClInclude Include="ColorDlg.h" />
+    <ClInclude Include="ColoredButton.h" />
+    <ClInclude Include="ContourExtrusionDlg.h" />
+    <ClInclude Include="DepthSliderDlg.h" />
+    <ClInclude Include="DialogSkinFrame.h" />
+    <ClInclude Include="ExportOptionsDlg.h" />
+    <ClInclude Include="FeaturePoints.h" />
+    <ClInclude Include="FeaturePointsDlg.h" />
+    <ClInclude Include="FrameCounterDlg.h" />
+    <ClInclude Include="FramesDlg.h" />
+    <ClInclude Include="GapFillDlg.h" />
+    <ClInclude Include="GapFillTool.h" />
+    <ClInclude Include="GeometryTool.h" />
+    <ClInclude Include="GeometryToolDlg.h" />
+    <ClInclude Include="GetTextDlg.h" />
+    <ClInclude Include="HaloTool.h" />
+    <ClInclude Include="HaloToolDlg.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="HelpDlg.h" />
+    <ClInclude Include="HtmlViewerDlg.h" />
+    <ClInclude Include="ImportListDlg.h" />
+    <ClInclude Include="ImportOptionsDlg.h" />
+    <ClInclude Include="InfoBarDlg.h" />
+    <ClInclude Include="LayersDlg.h" />
+    <ClInclude Include="LinkPointsDlg.h" />
+    <ClInclude Include="LinkPointsTool.h" />
+    <ClInclude Include="ListSelectDlg.h" />
+    <ClInclude Include="MenuToolTips.h" />
+    <ClInclude Include="PaintTool.h" />
+    <ClInclude Include="PaintToolDlg.h" />
+    <ClInclude Include="PerspectiveDlg.h" />
+    <ClInclude Include="PerspectiveTool.h" />
+    <ClInclude Include="PlanarProjectionDlg.h" />
+    <ClInclude Include="PreviewDlg.h" />
+    <ClInclude Include="ProjectionSettingsDlg.h" />
+    <ClInclude Include="ReliefMapDlg.h" />
+    <ClInclude Include="RenderingOptionsDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="G3DCoreInterface.h" />
+    <ClInclude Include="G3DMainFrame.h" />
+    <ClInclude Include="Gimpel3D.h" />
+    <ClInclude Include="Gimpel3DDlg.h" />
+    <ClInclude Include="ScaleSliderDlg.h" />
+    <ClInclude Include="Security.h" />
+    <ClInclude Include="Shapes.h" />
+    <ClInclude Include="ShapesDlg.h" />
+    <ClInclude Include="ShiftEdgesDlg.h" />
+    <ClInclude Include="Skin.h" />
+    <ClInclude Include="SkinButton.h" />
+    <ClInclude Include="SkinCheckBox.h" />
+    <ClInclude Include="SkinControlEdge.h" />
+    <ClInclude Include="SkinFrame.h" />
+    <ClInclude Include="SkinMessageBox.h" />
+    <ClInclude Include="SkinSlider.h" />
+    <ClInclude Include="SkinStaticLabel.h" />
+    <ClInclude Include="SkinToolBar.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StereoSettingsDlg.h" />
+    <ClInclude Include="TimeLineSliderDlg.h" />
+    <ClInclude Include="ToolBarDlg.h" />
+    <ClInclude Include="ToolsReferenceDlg.h" />
+    <ClInclude Include="ToolTrayDlg.h" />
+    <ClInclude Include="TouchUpsDlg.h" />
+    <ClInclude Include="TouchUpTool.h" />
+    <ClInclude Include="TrackOutlineDlg.h" />
+    <ClInclude Include="VirtualCameraDlg.h" />
+    <ClInclude Include="VirtualSet.h" />
+    <ClInclude Include="VirtualSetDlg.h" />
+    <ClInclude Include="webbrowser2.h" />
+    <ClInclude Include="WMI_Wrapper.h" />
+    <ClInclude Include="G3DCoreFiles\AutoSegment.h" />
+    <ClInclude Include="G3DCoreFiles\AVIExport.h" />
+    <ClInclude Include="G3DCoreFiles\bb_matrix.h" />
+    <ClInclude Include="G3DCoreFiles\Camera.h" />
+    <ClInclude Include="G3DCoreFiles\Clock.h" />
+    <ClInclude Include="G3DCoreFiles\Console.h" />
+    <ClInclude Include="G3DCoreFiles\ControlMesh.h" />
+    <ClInclude Include="G3DCoreFiles\Controls.h" />
+    <ClInclude Include="G3DCoreFiles\EdgeDetection.h" />
+    <ClInclude Include="G3DCoreFiles\EditOps.h" />
+    <ClInclude Include="G3DCoreFiles\Frame.h" />
+    <ClInclude Include="G3DCoreFiles\GLText.h" />
+    <ClInclude Include="G3DCoreFiles\GLWnd.h" />
+    <ClInclude Include="G3DCoreFiles\Image.h" />
+    <ClInclude Include="G3DCoreFiles\KLTInterface.h" />
+    <ClInclude Include="G3DCoreFiles\LayerMask.h" />
+    <ClInclude Include="G3DCoreFiles\Layers.h" />
+    <ClInclude Include="G3DCoreFiles\PBuffer.h" />
+    <ClInclude Include="G3DCoreFiles\PlanarProjection.h" />
+    <ClInclude Include="G3DCoreFiles\ProjectFile.h" />
+    <ClInclude Include="G3DCoreFiles\Puffit.h" />
+    <ClInclude Include="G3DCoreFiles\Relief.h" />
+    <ClInclude Include="G3DCoreFiles\RLECircleGrid.h" />
+    <ClInclude Include="G3DCoreFiles\G3D.h" />
+    <ClInclude Include="G3DCoreFiles\G3DCoreInterface.h" />
+    <ClInclude Include="G3DCoreFiles\SessionData.h" />
+    <ClInclude Include="G3DCoreFiles\StdAfx.h" />
+    <ClInclude Include="G3DCoreFiles\StereoView.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\base.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\convolve.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\error.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\klt.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\klt_util.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\pnmio.h" />
+    <ClInclude Include="G3DCoreFiles\KLTFiles\pyramid.h" />
+    <ClInclude Include="MFCMenuToolTipsFiles\MenuTipper.h" />
+    <ClInclude Include="MFCMenuToolTipsFiles\PupText.h" />
+    <ClInclude Include="MFCMenuToolTipsFiles\Subclass.h" />
+    <ClInclude Include="GeometryTool\GLBasic.h" />
+    <ClInclude Include="GeometryTool\KDNode.h" />
+    <ClInclude Include="GeometryTool\Membrane.h" />
+    <ClInclude Include="GeometryTool\Primitives.h" />
+    <ClInclude Include="GeometryTool\TriangleMesh.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationTool.h" />
+    <ClInclude Include="AnimationToolDlg.h" />
+    <ClInclude Include="Plugins.h" />
+    <ClInclude Include="PluginsDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\20x20.bmp" />
+    <Image Include="res\34x34.bmp" />
+    <Image Include="res\AnaglyphButton.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\CameraButton.bmp" />
+    <Image Include="res\file_too.bmp" />
+    <Image Include="res\Fullscreen.bmp" />
+    <Image Include="res\Gimpel3DLogo.bmp" />
+    <Image Include="res\GridButton.bmp" />
+    <Image Include="res\me_logo.bmp" />
+    <Image Include="res\museum-of-economic-botany_w725_h544.bmp" />
+    <Image Include="res\G3D3.bmp" />
+    <Image Include="res\Gimpel3D.ico" />
+    <Image Include="res\skin.bmp" />
+    <Image Include="res\splash.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Gimpel3D.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Gimpel3D.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

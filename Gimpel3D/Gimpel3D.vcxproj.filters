@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6f68c5b9-4d2b-4c99-81ad-55f646cb2581}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ef59359f-543b-4011-b65e-cd319ae7b610}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{fc534150-cbc4-49cd-ac95-9d47e248511b}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="G3DCoreFiles">
+      <UniqueIdentifier>{092a7f3f-9cd0-4b32-b41e-d95a2c7e9a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="G3DCoreFiles\Source Files No. 1">
+      <UniqueIdentifier>{68be2a83-9ed8-4962-bd84-c3458c99fcbe}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="G3DCoreFiles\Header Files No. 1">
+      <UniqueIdentifier>{8d8b4f4b-3eb6-4b05-948a-d786d72e1312}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="G3DCoreFiles\KLT Files">
+      <UniqueIdentifier>{518c3739-072c-45a2-8426-e052646a2502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCToolTips Files">
+      <UniqueIdentifier>{8f448c2e-2de1-41b3-bb2b-ade61901cd57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GapFillTool">
+      <UniqueIdentifier>{baa5c670-9016-4fcb-ab00-c51a8e6c64aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GeometryTool">
+      <UniqueIdentifier>{4fc64e23-6623-4db6-9dcb-288de46afa18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation Files">
+      <UniqueIdentifier>{913ae645-4a64-4856-9876-4956bb309bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PluginSystem">
+      <UniqueIdentifier>{961d9747-0586-4eef-8971-8c927ced9b18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="2DViewOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3DFrameDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3DViewOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignmentOptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnchorPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnchorPointsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSegmentDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircularMaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContourExtrusionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthSliderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogSkinFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisparityMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportOptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePointsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameCounterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FramesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GapFillDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryToolDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetSystemInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTextDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HaloTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HaloToolDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Help.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlViewerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportOptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoBarDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KBMouseControls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LayersDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkPointsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkPointsTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListSelectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintToolDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerspectiveDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerspectiveTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanarProjectionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectionSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReliefMapDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingOptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DFrontEndInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DMainFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimpel3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimpel3DDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleSliderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftEdgesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinMessageBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StereoSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLineSliderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBarDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolsReferenceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolTrayDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchUpsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchUpTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackOutlineDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualCameraDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualSetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\AntiAlias.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\AutoAlignment.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\AutoSegment.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\AVIExport.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\BasicEditOps.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\BrushOps.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Camera.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Clock.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Console.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\ControlMesh.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Controls.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\EdgeDetection.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\EdgeFade.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\EditOps.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\ExtractVideoFrames.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\FastMath.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Frame.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\GLEditWnd.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\GLText.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\GLWnd.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Grid.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Image.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTInterface.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\LayerMask.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\LayerPopupMenu.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Layers.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\MotionTracker.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\PBuffer.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\PixelCreepHistory.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\PlanarProjection.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\ProjectFile.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Puffit.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\Relief.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\ResampleStrips.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\RLECircleGrid.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\SideBarFill.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\StereoView.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\TempExterns.cpp">
+      <Filter>G3DCoreFiles\Source Files No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\convolve.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\error.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example1.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example2.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example3.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example4.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\example5.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\klt.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\klt_util.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\main.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\pnmio.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\pyramid.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\selectGoodFeatures.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\storeFeatures.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\trackFeatures.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G3DCoreFiles\KLTFiles\writeFeatures.cpp">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCMenuToolTipsFiles\MenuTipper.cpp">
+      <Filter>MFCToolTips Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCMenuToolTipsFiles\PupText.cpp">
+      <Filter>MFCToolTips Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCMenuToolTipsFiles\Subclass.cpp">
+      <Filter>MFCToolTips Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GapFillTool\GapFillTool.cpp">
+      <Filter>GapFillTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GapFillTool\GapFillToolControls.cpp">
+      <Filter>GapFillTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GapFillTool\GapFillWnd.cpp">
+      <Filter>GapFillTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GapFillTool\IsolateGaps.cpp">
+      <Filter>GapFillTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryTool\GeometryTool.cpp">
+      <Filter>GeometryTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryTool\LoadOBJ.cpp">
+      <Filter>GeometryTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryTool\Membrane.cpp">
+      <Filter>GeometryTool</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryTool\TriangleMesh.cpp">
+      <Filter>GeometryTool</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Animation Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTool.cpp">
+      <Filter>Animation Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationToolDlg.cpp">
+      <Filter>Animation Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginInterfaces.cpp">
+      <Filter>PluginSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugins.cpp">
+      <Filter>PluginSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginsDlg.cpp">
+      <Filter>PluginSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedData.cpp">
+      <Filter>PluginSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gimpel3D.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DViewOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3DFrameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3DViewOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignmentOptionsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnchorPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnchorPointsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSegmentDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularMaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColoredButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContourExtrusionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthSliderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogSkinFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportOptionsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePointsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameCounterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FramesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GapFillDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GapFillTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryToolDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GetTextDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HaloTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HaloToolDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Help.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlViewerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportOptionsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoBarDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LayersDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkPointsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkPointsTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuToolTips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintToolDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerspectiveDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerspectiveTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanarProjectionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectionSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReliefMapDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingOptionsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DMainFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimpel3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimpel3DDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleSliderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Security.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftEdgesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinControlEdge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinMessageBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinStaticLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StereoSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLineSliderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBarDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolsReferenceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolTrayDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchUpsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchUpTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackOutlineDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualCameraDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualSetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WMI_Wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\AutoSegment.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\AVIExport.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\bb_matrix.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Camera.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Clock.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Console.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\ControlMesh.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Controls.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\EdgeDetection.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\EditOps.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Frame.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\GLText.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\GLWnd.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Image.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTInterface.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\LayerMask.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Layers.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\PBuffer.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\PlanarProjection.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\ProjectFile.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Puffit.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\Relief.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\RLECircleGrid.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\G3D.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\G3DCoreInterface.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\SessionData.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\StdAfx.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\StereoView.h">
+      <Filter>G3DCoreFiles\Header Files No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\base.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\convolve.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\error.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\klt.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\klt_util.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\pnmio.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G3DCoreFiles\KLTFiles\pyramid.h">
+      <Filter>G3DCoreFiles\KLT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCMenuToolTipsFiles\MenuTipper.h">
+      <Filter>MFCToolTips Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCMenuToolTipsFiles\PupText.h">
+      <Filter>MFCToolTips Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCMenuToolTipsFiles\Subclass.h">
+      <Filter>MFCToolTips Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTool\GLBasic.h">
+      <Filter>GeometryTool</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTool\KDNode.h">
+      <Filter>GeometryTool</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTool\Membrane.h">
+      <Filter>GeometryTool</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTool\Primitives.h">
+      <Filter>GeometryTool</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTool\TriangleMesh.h">
+      <Filter>GeometryTool</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Animation Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationTool.h">
+      <Filter>Animation Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationToolDlg.h">
+      <Filter>Animation Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugins.h">
+      <Filter>PluginSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginsDlg.h">
+      <Filter>PluginSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\20x20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\34x34.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AnaglyphButton.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00005.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00006.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\CameraButton.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_too.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Fullscreen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Gimpel3DLogo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GridButton.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\me_logo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\museum-of-economic-botany_w725_h544.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\G3D3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Gimpel3D.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\skin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\splash.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Gimpel3D.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
