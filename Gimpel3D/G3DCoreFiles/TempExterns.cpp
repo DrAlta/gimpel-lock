@@ -42,6 +42,13 @@ bool Report_Selection_Changed();
 extern bool play_preview;
 bool Update_Preview_Playback();
 
+
+extern bool spawnDelayed3DViewPopupMenu;
+bool SpawnDelayed3DView_Layer_Popup_Menu();
+
+extern bool delayedResizeGLScene;
+void DelayedReSizeGLScene();
+
 extern bool update_2d_view_texture;
 bool Restore_Original_Frame_Texture();
 
@@ -808,11 +815,18 @@ bool Init_G3D_Core()
 	Set_Puff_Search_Range(25);
 
 	Init_Noise_Texture();
+
+	glGetError();
 	return true;
 }
 
 bool Update_G3D_Core()
 {
+		if(glGetError()==1281)
+		{
+			int e = glGetError();
+			exit(0);
+		}
 	static int demo_popup = 0;
 	Update_Clock();
 	Update_Win32_Messages();
@@ -858,6 +872,10 @@ bool Update_G3D_Core()
 	}
 	if(render_2d)
 	{
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
 		Set_Edit_Context();
 		if(run_layer_popup_menu)//make sure layer is selected for highlight
 		{
@@ -890,9 +908,21 @@ bool Update_G3D_Core()
 			redraw_edit_window = false;
 		}
 		Set_GLContext();
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
 	}
 	if(render_3d)
 	{
+		if(delayedResizeGLScene)
+		{
+			DelayedReSizeGLScene();
+		}
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
 		Clear_Screen();
 		Render_3D_View();
 		if(demo_popup==20||Alt_Key_Pressed())
@@ -901,11 +931,27 @@ bool Update_G3D_Core()
 		}
 		Update_Screen();
 		redraw_frame = false;
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
+	}
+	if(spawnDelayed3DViewPopupMenu)
+	{
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
+		SpawnDelayed3DView_Layer_Popup_Menu();
 	}
 	if(run_layer_popup_menu)
 	{
 		Run_Layer_Popup_Menu();
 	}
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
 	return true;
 }
 

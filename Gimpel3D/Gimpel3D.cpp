@@ -27,6 +27,7 @@
 #include "GapFillTool.h"
 #include "Skin.h"
 #include "Plugins.h"
+#include <gl\gl.h>
 
 bool Demo_Intro();
 
@@ -185,6 +186,8 @@ bool RunApp()
 	Load_Plugins();
 
 	mainwindow->SetFocus();
+
+	glGetError();//clear any error flags from init (sigh, there is one, fix for long term)
 
 	while(app_running)
 	{

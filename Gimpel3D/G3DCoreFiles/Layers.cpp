@@ -37,6 +37,7 @@ using namespace std;
 
 extern bool use_triangle_indices;
 
+bool b_allowVertexArray = true;
 
 class LAYER;
 
@@ -991,9 +992,13 @@ public:
 		}
 		glEnd();
 	}
-	void Render_Tri_Indices()
+	void Render_Tri_Indices(bool allowVertexArray)
 	{
 		if(reproject)ReProject_To_Geometry();
+		if(!allowVertexArray)
+		{
+			Render_Layer_In_Realtime();
+		}
 		if(num_render_indices>0)
 		{
 			//we are using pre-calculated index buffer for rendering
@@ -1004,6 +1009,10 @@ public:
 			//memory was conserved, have to draw it in realtime
 			Render_Layer_In_Realtime();
 		}
+	}
+	void Render_Tri_Indices()
+	{
+		Render_Tri_Indices(b_allowVertexArray);
 	}
 	__forceinline float Dist_To_Plane(float *p, float *tp, float *n)
 	{
@@ -3582,13 +3591,14 @@ void Render_Layers_For_Selection()
 	for(int i = 0;i<n;i++)
 	{
 		glLoadName(active_frame_layers->layers[i]->layer_id);
+		//glLoadName(i);
 		if(active_frame_layers->layers[i]->selected&&render_puff_preview&&active_frame_layers->layers[i]->layer_puff_type!=-1)
 		{
 			active_frame_layers->layers[i]->Render_Puff_Preview_Tri_Indices();
 		}
 		else
 		{
-			active_frame_layers->layers[i]->Render_Tri_Indices();
+			active_frame_layers->layers[i]->Render_Tri_Indices(false);
 		}
 	}
 	glDisableClientState(GL_VERTEX_ARRAY);

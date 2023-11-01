@@ -213,8 +213,11 @@ public:
 	}
 	bool Set_Context()
 	{
-		glFinish();
-		wglMakeCurrent(_hDC, _hRC);
+		//glFinish();
+		if(_hRC!=wglGetCurrentContext())
+		{
+			wglMakeCurrent(_hDC, _hRC);
+		}
 		return true;
 	}
 	bool Init_GLWindow(HWND pWnd, int xpos, int ypos, int width, int height, int bits, bool fullscreen)

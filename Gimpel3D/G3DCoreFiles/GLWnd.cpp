@@ -136,8 +136,6 @@ bool initExtensions(void)
 	return false;
 }
 
-
-
 void ReSizeGLScene(int width, int height)
 {
 	Set_GLContext();
@@ -154,6 +152,15 @@ void ReSizeGLScene(int width, int height)
 	vp_width = width;
 	vp_height = height;
 }
+
+bool delayedResizeGLScene = false;
+
+void DelayedReSizeGLScene()
+{
+	delayedResizeGLScene = false;
+	ReSizeGLScene(_screenwidth, _screenheight);
+}
+
 
 void Set_Projection_Dlg_FOV(float fov);
 bool ReApply_Frame_Transform();
@@ -291,8 +298,96 @@ bool Extended_GL_Window(HWND pWnd, char* title, int xpos, int ypos, int width, i
 
 bool Set_GLContext()
 {
-	glFinish();
-	wglMakeCurrent(_hDC, _hRC);
+//	glFinish();
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
+	//glFlush();
+	//	if(glGetError()==1281)
+	//	{
+	//		exit(0);
+	//	}
+	if(_hRC != wglGetCurrentContext())
+	{
+		wglMakeCurrent(NULL, NULL);
+		if(glGetError()==1281)
+		{
+			exit(0);
+		}
+		int res = wglMakeCurrent(_hDC, _hRC);
+		if(res!=TRUE)
+		{
+			exit(0);
+		}
+	}
+		if(glGetError()==1281)
+		{
+			//ok, at this point, wglMakeCurrent has:
+			//(a) - reported success
+			//(b) - set the gl error flag to GL_INVALID_ARGUMENT
+			//and most importantly
+			//(c) - no actually set the context correct;y because that is apparent from the BUG that I am chasing down which leads me here..
+
+			//SO, apparently wglMakeCurrent is "working" because it reports success, but also "failing" because it sets an error flag
+			//and "flaky" because it reports success, flags an error, and Creates A State In WHich Later Bugs WIll Happen Downstream..
+
+			//So, rinse and repeat
+
+			bool retry = true;
+			int max_its = 9999;
+			int its = 0;
+
+			while(retry)
+			{
+				//try setting the context
+				int res = wglMakeCurrent(_hDC, _hRC);
+				if(res!=TRUE)
+				{
+					//ok, setting the context failed, something is wrong..
+					exit(0);
+				}
+				//whoop de mother fucking do, the context was set successfully..
+				//so there should be no errors
+				if(glGetError()==1281)
+				{
+					//wait a minute, there seems to be an erro flag for GL_INVALID_ARGUMENT..
+					//APPARENTLY, the return value from wglMakeCurrent Was Incorrect, and this Will Lead To A Crash later on..
+
+					//SO, since wglMakeCurrent THINKS it worked, let's give it another shot..
+					retry = true;
+					its++;
+					if(its==max_its)
+					{
+						retry = false;
+					}
+				}
+				else
+				{
+					//hey, looks like it actually worked..
+					retry = false;
+
+					//TO BE CLEAR - WHAT HAPPENED WHEN IT REACHRES THIS POINT IN THE CODE
+					//opengl error state was fine, no error..
+					//wglMakeCurrent was called and it reported success BUT set the error flag
+					//the next time it was called, it also reported success but did NOT set an error flag..
+				}
+			}
+
+			if(its==max_its)
+			{
+				//ok, that is "max_its" times that the wglMakeCurrent reported success when it actually failed..
+				//when the fuck else would the driver like this function to be called?
+				exit(0);
+			}
+
+
+			//ok we had to call wglMakeCurrent more than once because it (a) "works" and "fails" the first time (according to return value
+			//and opengl error state), AND there is actually a legitimate bug caused by this error condition..later down the road..
+
+			//exit(0);so don't exit, see if it actually makes a dman bit of difference later on when we actually, um, NEED the opengl
+			//context set to a specific window, which is why things like wglMakeCurrent exist..
+		}
 	return true;
 }
 
@@ -455,7 +550,8 @@ LRESULT CALLBACK _WndProc(HWND hWnd,UINT	uMsg,WPARAM	wParam,LPARAM lParam)
 		}
 		case WM_SIZE:
 		{
-			ReSizeGLScene(LOWORD(lParam),HIWORD(lParam));
+			delayedResizeGLScene = true;
+			//ReSizeGLScene(LOWORD(lParam),HIWORD(lParam));
 			_screenwidth = LOWORD(lParam);
 			_screenheight = HIWORD(lParam);
 			redraw_frame = true;
@@ -464,6 +560,7 @@ LRESULT CALLBACK _WndProc(HWND hWnd,UINT	uMsg,WPARAM	wParam,LPARAM lParam)
 	}
 	return DefWindowProc(hWnd,uMsg,wParam,lParam);
 }
+
 
 
 bool Init_GLWindow(HWND pWnd, int xpos, int ypos, int width, int height, int bits, bool fullscreen)

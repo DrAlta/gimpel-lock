@@ -550,6 +550,22 @@ bool Update_Common_Keys(int key, bool pressed, bool *keys)
 }
 
 
+//yeah, sure this sucks, but the UI needs a good re-interfacing anyway so all is subject to change..let the hacks run wild..
+bool spawnDelayed3DViewPopupMenu = false;
+int layerPopupMouseX = 0;
+int layerPopupMouseY = 0;
+
+bool SpawnDelayed3DView_Layer_Popup_Menu()
+{
+	spawnDelayed3DViewPopupMenu = false;
+	Layer_Popup_Menu(Get_3D_Window(), layerPopupMouseX, layerPopupMouseY, Get_3D_Clicked_Layer(layerPopupMouseX, layerPopupMouseY));
+	return true;
+}
+
+extern bool spawnDelayed3DViewPopupMenu;
+bool SpawnDelayed3DView_Layer_Popup_Menu();
+
+
 bool Update_Key(int key, bool pressed)
 {
 	Report_3D_Window_KeyState(key, pressed);
@@ -592,7 +608,10 @@ bool Update_Key(int key, bool pressed)
 	{
 		if(allow_layer_popup_menu)
 		{
-			Layer_Popup_Menu(Get_3D_Window(), mouse_x, mouse_y, Get_3D_Clicked_Layer(mouse_x, mouse_y));
+			//Layer_Popup_Menu(Get_3D_Window(), mouse_x, mouse_y, Get_3D_Clicked_Layer(mouse_x, mouse_y));
+			spawnDelayed3DViewPopupMenu = true;
+			layerPopupMouseX = mouse_x;
+			layerPopupMouseY = mouse_y;
 		}
 	}
 	if(pressed&&key==center_view_key)

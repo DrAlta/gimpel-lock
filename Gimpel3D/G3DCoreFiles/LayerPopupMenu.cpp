@@ -665,6 +665,7 @@ void Setup_GL_Selection_Render(int px, int py)
 
 bool Get_Selection_Hit(unsigned int *res)
 {
+	int e = glGetError();
 	glPopMatrix();
 	glMatrixMode(GL_PROJECTION);
 	glPopMatrix();
@@ -691,6 +692,7 @@ bool Get_Selection_Hit(unsigned int *res)
 
 int Get_3D_Clicked_Layer(int x, int y)
 {
+	Set_GLContext();
 	Setup_GL_Selection_Render(x, y);
 	Render_Layers_For_Selection();
 	unsigned int res = 0;
